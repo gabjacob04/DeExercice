@@ -10,8 +10,7 @@ namespace DeExercice
     {
         private int nombreFace;
         private string type;
-        private int point;
-        private Random random = new Random();   
+        private int point; 
 
         public string Type { get => type; set => type = value; }
         public int NombreFace { get => nombreFace; set => nombreFace = value; }

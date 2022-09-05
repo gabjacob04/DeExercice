@@ -13,7 +13,7 @@ namespace DeExercice
         private int point; 
 
         public string Type { get => type; set => type = value; }
-        public int NombreFace { get => nombreFace; }
+        public int NombreFace { get => nombreFace; set => nombreFace = value; }
         public int Point { get => point; set => point = value; }
 
         public DeControleur(int nombreFace, string type)

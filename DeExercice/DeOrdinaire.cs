@@ -21,7 +21,7 @@ namespace DeExercice
         public override int Brasser()
         {
             Random random = new Random();
-            deValeur = random.Next(1, 7);
+            deValeur = random.Next(1, NombreFace + 1);
             PointDe();
             return deValeur;
         }

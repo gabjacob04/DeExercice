@@ -20,7 +20,7 @@ namespace DeExercice
         public override int Brasser()
         {
             Random random = new Random();
-            valeurDe = random.Next(1, 7);
+            valeurDe = random.Next(1, NombreFace+ 1);
             if (valeurDe <= 3)
             {
                 valeurDe = random.Next(1, 7);

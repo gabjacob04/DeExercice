@@ -9,14 +9,11 @@ namespace DeExercice
     internal class DeOrdinaire : DeControleur
     {
         private int deValeur;
-        private string type;
 
         public DeOrdinaire(int nombreFace, string type) : base(nombreFace, type)
         {
-            this.type = "Ordinaire";
+            type = "Ordinaire";
         }
-
-        public string Type1 { get => type; set => type = value; }
 
         public override int Brasser()
         {

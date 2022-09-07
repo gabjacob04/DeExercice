@@ -9,13 +9,10 @@ namespace DeExercice
     public class DePipe : DeControleur
     {
         private int valeurDe;
-        private string type;
         public DePipe(int nombreFace, string type) : base(nombreFace, type)
         {
-            this.type = "Pipé";
+            type = "Pipé";
         }
-
-        public string Type1 { get => type; set => type = value; }
 
         public override int Brasser()
         {

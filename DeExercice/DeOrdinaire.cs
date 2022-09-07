@@ -9,18 +9,15 @@ namespace DeExercice
     internal class DeOrdinaire : DeControleur
     {
         private int deValeur;
-        private string type;
+        Random random = new Random();
 
         public DeOrdinaire(int nombreFace, string type) : base(nombreFace, type)
         {
-            this.type = "Ordinaire";
+            type = "Ordinaire";
         }
-
-        public string Type1 { get => type; set => type = value; }
 
         public override int Brasser()
         {
-            Random random = new Random();
             deValeur = random.Next(1, NombreFace + 1);
             PointDe();
             return deValeur;

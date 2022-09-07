@@ -9,17 +9,15 @@ namespace DeExercice
     public class DePipe : DeControleur
     {
         private int valeurDe;
-        private string type;
+        Random random = new Random();
+
         public DePipe(int nombreFace, string type) : base(nombreFace, type)
         {
-            this.type = "Pipé";
+            type = "Pipé";
         }
-
-        public string Type1 { get => type; set => type = value; }
 
         public override int Brasser()
         {
-            Random random = new Random();
             valeurDe = random.Next(1, NombreFace+ 1);
             if (valeurDe <= 3)
             {
